@@ -1,41 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.background1{
+    position: relative;
+}
+
+.background1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../Assets/Images/Home_bg_img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    opacity: 0.75; 
+}
+
 .container1{
-    display: flex;
-    width: 100%;
-    height: 90vh;
-    background-color:rgb(161, 158, 157);
-    margin-top: 0%;
-}
-
-
-.container1 .leftContents{
+    position: relative;
     width: 50%;
-    margin-top: 10% ;
+    height: 80vh;
     margin-left: 8.33%;
-}
-
-.leftContents h1{
-    width: 90%;
-    font-weight: bold;
-    font-size: 5vw;
-}
-.leftContents p{
-    width: 80%;
-    font-size: 3vw;
-}
-.leftContents button{
-    border-radius: 10px;
-}
-
-
-.container1 .rightContents{
-    width: 50%;
     margin-top: 10%;
-    margin-right: 8.33%;
 }
 
-.rightContents img{
-    max-width: 100%;
-    height: auto;
-    opacity: 0.8;
+.container1 h1{
+    font-family: 'Lobster', cursive;
+    font-size: 4vw;
+}
+
+.container1 p{
+    font-family: 'Lobster', cursive;
+    font-size: 3vw;
+    margin-top: 20%;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    
+}
+
+.container1 button{
+    margin-top: 5%;
+    border-radius: 10px;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.container1 button:hover{
+    background-color: #dbdbdb;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:768px){
+    .container1 p{
+        font-size: 3.5vw;
+        margin-top: 40%;;
+    }
 }
 

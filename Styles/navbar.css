@@ -1,8 +1,9 @@
 nav {
+    position: relative;
     background-color: #f8f8f8;
     padding-left: 5%;
     padding-right: 5%;
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
   }
@@ -21,7 +22,6 @@ nav {
     margin: 0;
     padding: 0;
     padding-left: 5%;
-    padding-right: 2%;
     overflow: hidden;
     width: 55%;
     display: flex;
@@ -31,7 +31,7 @@ nav {
   
   .menu li {
     float: left;
-    margin-right: 13%;
+    margin-right: 10%;
   }
   
   .menu li a {
