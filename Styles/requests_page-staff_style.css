@@ -1,0 +1,127 @@
+.all_requests{
+    width: 83.33%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.request{
+    margin-bottom: 5%;
+}
+
+div.request_details{
+    background-color:darkgrey;
+    margin: 0 auto;
+    margin-right: 0;
+    max-width: 900px;
+    width: 80%;
+    padding-bottom: 3vh;
+    padding-top: 0px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 58vh;
+    max-height: 400px;
+    overflow: auto;
+    display: none;
+}
+
+div.request_details.show{
+    display: block;
+}
+
+div.cus_details, 
+div.reservation_details{
+    background-color: azure;
+    display: flex;
+}
+
+div.request_details h3{
+    color: white;
+    font-size: 2vw;
+    margin-bottom: 2px;
+    margin-top: 105x;
+}
+
+div.request_details span{
+    font-size: 1.2vw;
+    line-height: 1.2;
+}
+
+div.buttons button{
+    border-radius: 15%;
+    border-width: 4px;
+    cursor: pointer;
+}
+
+div.buttons button:hover{
+    background-color: #d0d0d0;
+}
+
+div.request_details div.buttons{
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    display: flex;
+    align-items: center;
+}
+
+div.request_details div.buttons button{
+    width: 8vw;
+    height: 5vh;
+    font-size: 1.2vw;
+    margin: 0 auto;
+    margin-right: 25vw;
+    margin-left: 5vw;
+}
+   
+
+.car_option_header{
+    background-color: rgb(42, 41, 41);
+    color: aliceblue;
+    width: 100%;
+    display: flex;
+}
+
+.filled_details{
+    margin-left: 25%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.car_option_header h1{
+    width: 75%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 3vw;
+}
+
+.fa-circle-chevron-down{
+    margin-top: auto;
+    margin-bottom: auto;
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+
+.fa-circle-chevron-down:hover{
+    color: rgb(184, 184, 184);
+}
+
+
+.down{
+    transform: rotate(0deg);
+}
+
+.view_details_text{
+    font-size: 1.5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding-right: 0.5%;
+    cursor: pointer;
+}
+
+
+.color_of_car_option_header{
+    color: rgb(42, 41, 41);
+}

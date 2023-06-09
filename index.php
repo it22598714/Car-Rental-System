@@ -12,14 +12,14 @@
     <!-- Navigation bar  -->
     <nav>
       <div class="logo">
-        <a href="index.html">
+        <a href="index.php">
           <img src="Assets/Images/Logo.png" alt="Logo" width="100px" height="100px">
         </a>
       </div>
       <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="index.php">Home</a></li>
         <li><a href="Reservations">Reservations</a></li>
         <li><a href="About">About Us</a></li>
         <li><a href="Contact">Contact Us</a></li>

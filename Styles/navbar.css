@@ -46,7 +46,7 @@ nav {
     display: none;
   }
 
-  #login_btn{
+  .acount_icon{
     background-color: #ffffff;
     color: #000000;
     border-radius: 5px;
@@ -59,7 +59,7 @@ nav {
     float: left;
   }
 
-  #login_btn:hover{
+  .acount_icon:hover{
     background-color: #000000;
 	  color: #ffffff;
     transition: 0.8s;
@@ -128,8 +128,7 @@ nav {
       display: block;
     }
 
-    #login_btn{
-        height: 10vw;
+    .acount_icon{
         margin-right: 10%;
     }
 }
