@@ -36,7 +36,7 @@
       <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
-        <li><a href="index.php">Home</a></li>
+        <li><a href="home-staff.php">Home</a></li>
         <li><a href="requests_page-staff.php" class="active" href="Reservations">Requests</a></li>
         <li><a>Messages</a></li>
       </ul>
