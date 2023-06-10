@@ -94,6 +94,21 @@
     margin-left: 5%;
 }
 
+.search_button button{
+    border-radius: 5px;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.search_button button:hover{
+  background-color: #dbdbdb;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+
+.set_details_form input{
+  border-radius: 5px;
+}
 
 
 /* background3 */
@@ -139,7 +154,7 @@
 /* background4 */
 
 .background4{
-    background-color: rgb(42, 40, 40);
+    background-color: rgb(15, 14, 10);
     width: 100%;
     margin-top: 45vh;
 
@@ -180,6 +195,28 @@
 
 .category h2 {
     margin-top: 10px;
+}
+
+.viewall_button{
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.viewall_button button{
+  font-size: 2vw;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.viewall_button button:hover{
+  background-color: #000000;
+	color: #ffffff;
+  transition: 0.8s;
 }
 
 @media screen and (max-width: 768px) {
@@ -292,3 +329,128 @@
     }
   }
   */
+
+
+  /* background5 */
+  .background5{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.573)), url("../Assets/Images/bg5_bgimg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .bg5contents{
+    color: #dbdbdb;
+  }
+
+  .bg5contents h1{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    font-size: 3vw;
+  }
+
+  .bg5contents p{
+    width: 30%;
+    margin-right: auto;
+    margin-left: 8.33%;
+    padding-top: 2%;
+    font-size: 1.5vw;
+  }
+
+  .bg5contents button{
+    width: auto;
+    margin-left: 8.33%;
+    margin-right: auto;
+    border-radius: 10px;
+    font-size: 1.3vw;
+    cursor: pointer;
+    margin-top: 3%;
+  }
+
+  .bg5contents button:hover{
+    background-color: #000000;
+    color: #ffffff;
+    transition: 0.8s;
+  }
+
+
+
+  /* background5 */
+
+  .background6{
+    background-color: rgb(43, 49, 51);
+  }
+
+  .bg5_body{
+    display: flex;
+    font-size: 3vw;
+  }
+
+  .bg6_contents{
+    margin-left: auto;
+    margin-right: auto;
+    width: 83.34%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+
+  /* background5 */
+  
+  .background7{
+    background-color: rgb(77, 87, 91);
+  }
+
+  .bg7_header{
+    padding-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
+
+  .bg7_header h1{
+    font-size: 4vw;
+    padding-bottom: 5%;
+  }
+
+  .bg7_clients{
+    display: flex;
+    gap: 30px;
+    padding: 0 10px; 
+  }
+
+  .bg7_clients img{
+    width: 100px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 3%;
+  }
+
+  .client{
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bg7_contents{
+    padding-bottom: 5%;
+  }
+
+  .bg7_contents button{
+    margin-left: 45%;
+    margin-right: 45%;
+    font-size: 1.3vw;
+    margin-top: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .bg7_contents button:hover{
+    background-color: #dbdbdb;
+    border: 2px solid black;
+    transition: 0.5s;
+}

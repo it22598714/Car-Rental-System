@@ -36,33 +36,68 @@
     
   </div>
 
-  <!-- Second part of the home page  -->
+  <!-- Second part of the home page -->
   <div class="background2">
-    <fieldset class="set_details">
-      <legend></legend>
-      <form class="set_details_form" action="" method="get">
-        <div class="pickup_details">
-          <label for="set_pick_up_location">Pick-up Location</label>
-          <input type="text" id="set_pick_up_location" name="set_pick_up_location" value=""><br>
-          <label for="set_pickup_date">Pick-up Date</label>
-          <input type="date" id="set_pickup_date" name="set_pickup_date">
-          <label for="set_pickup_time">Pick-up Time</label>
-          <input type="time" id="set_pickup_time" name="set_pickup_time"> 
-        </div>
-        <div class="drop_details">
-          <label for="set_drop_location">Drop-off Location</label>
-          <input type="text" id="set_drop_location" name="set_drop_location" value=""><br>
-          <label for="set_drop_date">Drop-off Date</label>
-          <input type="date" id="set_drop_date" name="set_drop_date">
-          <label for="set_drop_time">Drop Time</label>
-          <input type="time" id="set_drop_time" name="set_drop_time">
-        </div>
-        <div class="search_button">
-          <button type="submit" name="search_button">Search</button>
-        </div>
-      </form>
-    </fieldset>
+      <fieldset class="set_details">
+          <legend>Quick car Resevation</legend>
+          <form class="set_details_form" action="process_reservation.php" method="post">
+              <div class="pickup_details">
+                  <label for="set_pick_up_location">Pick-up Location</label>
+                  <input type="text" id="set_pick_up_location" name="set_pick_up_location" value=""><br>
+                  <label for="set_pickup_date">Pick-up Date</label>
+                  <input type="date" id="set_pickup_date" name="set_pickup_date">
+                  <label for="set_pickup_time">Pick-up Time</label>
+                  <input type="time" id="set_pickup_time" name="set_pickup_time"><br>
+                  <label for="cus_fname">First name</label>
+                  <input type="text" id="cus_fname" name="cus_fname" value="">
+              </div>
+              <div class="drop_details">
+                  <label for="set_drop_location">Drop-off Location</label>
+                  <input type="text" id="set_drop_location" name="set_drop_location" value=""><br>
+                  <label for="set_drop_date">Drop-off Date</label>
+                  <input type="date" id="set_drop_date" name="set_drop_date">
+                  <label for="set_drop_time">Drop Time</label>
+                  <input type="time" id="set_drop_time" name="set_drop_time"><br>
+                  <label for="cus_lname">Last name</label>
+                  <input type="text" id="cus_lname" name="cus_lname" value="">
+              </div>
+              <div class="search_button">
+                  <select name="quick_car_select" id="quick_car_select">
+                      <option value="0">Select Car</option>
+                  </select>
+                  <button type="submit" name="search_button">Reserve Now</button>
+              </div>
+          </form>
+      </fieldset>
   </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+  <?php
+              // Include the config.php file for database connection
+              include("config.php");
+
+              // Fetch the available cars from the Car table where Availability is 'yes'
+              $sql = "SELECT Car_ID, Brand, model FROM Car WHERE Availability = 'yes'";
+              $result = $con->query($sql);
+
+              // Check if there are any available cars
+              if ($result->num_rows > 0) {
+                  // Loop through each row and generate the options for the select dropdown
+                  while ($row = $result->fetch_assoc()) {
+                      $carID = $row['Car_ID'];
+                      $brand = $row['Brand'];
+                      $model = $row['model'];
+                      echo "document.getElementById('quick_car_select').innerHTML += '<option value=\"$carID\">$brand $model</option>';\n";
+                  }
+              } else {
+                  echo "document.getElementById('quick_car_select').innerHTML = '<option value=\"0\">No cars available</option>';\n";
+              }
+          ?>
+  </script>
+
+
 
   <!-- Third part of the home page  -->
   <div class="background3">
@@ -110,9 +145,76 @@
           <button class="prev-btn">&#8249;</button>
           <button class="next-btn">&#8250;</button>
         </div>
+        <div class="viewall_button">
+          <button>view all</button>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- Fifth part of the home page -->
+  <div class="background5">
+    <div class="bg5contents">
+      <h1>More than 5000 people are using our services</h1>
+      <p>Contact us via our web site & experience our amazing customer service...</p>
+      <button>. Contact us now .</button>
+    </div>
+  </div>
+
+  <!-- Fifth part of the home page -->
+  <div class="background6">
+    <div class="bg6_contents">
+      <div class="bg6_header">
+        <h1>4 Simple steps to rent a car!</h1>
+      </div>
+      <div class="bg5_body">
+        <div class="step1">
+          Set Date & Location
+        </div>
+        <div class="step2">
+          Choose a cal_from
+        </div>
+        <div class="step3">
+          Make a reservation
+        </div>
+        <div class="step4">
+          Enjoy your ride
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sixth part of the home page -->
+  <div class="background7">
+    <div class="bg7_contents">
+      <div class="bg7_header">
+        <h1>Our Clients</h1>
+      </div>
+      <div class="bg7_clients">
+        <div class="client" class="client1">
+          <img src="images/client1.png" alt="client1">
+          <p class="description">ssssssssssssssssssssssssssssss</p>
+        </div>
+        <div class="client" class="client2">
+          <img src="images/client2.png" alt="client2">
+          <p class="description"></p>
+        </div>
+        <div class="client" class="client3">
+          <img src="images/client3.png" alt="client3">
+          <p class="description"></p>
+        </div>
+        <div class="client" class="client4">
+          <img src="images/client4.png" alt="client4">
+          <p class="description"></p>
+        </div>
+      </div>
+      <button>View all Feedbacks</button>
+    </div>
+  </div>
+
+
+
+
 
 
 </body>

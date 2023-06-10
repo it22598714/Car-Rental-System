@@ -49,10 +49,12 @@
 
         $ID = $reservation['ID'];
         $Customer_ID = $reservation['Customer_ID'];
+        $Pickup_location = $reservation['Pickup_location'];
         $Pickup_date = $reservation['Pickup_date'];
         $Pickup_time = $reservation['Pickup_time'];
-        $Return_date = $reservation['Return_date'];
-        $Return_time = $reservation['Return_time'];
+        $Drop_location = $reservation['Drop_location'];
+        $Drop_date = $reservation['Drop_date'];
+        $Drop_time = $reservation['Drop_time'];
         $Rental_duration = $reservation['Rental_duration'];
         $Rental_price = $reservation['Rental_price'];
         $First_name = $reservation['First_name'];
@@ -86,16 +88,20 @@
                 <span><h3>Reservation Details:</h3></span>
                 <div class="reservation_details">
                     <div class="reservation_details_topics">
+                        <span>Pick up location : </span> <br>
                         <span>Pick up Date : </span> <br>
                         <span>Pick up Time : </span> <br>
+                        <span>Drop off location : </span> <br>
                         <span>Drop off Date : </span> <br>
                         <span>Drop off Time : </span> <br>
                     </div>
                     <div class="reservation_details_filled_details">
+                        <span class="filled_details" id="Pickup_location">'.$Pickup_location.'</span><br>
                         <span class="filled_details" id="pickup_date">'.$Pickup_date.'</span><br>
                         <span class="filled_details" id="pickup_time">'.$Pickup_time.'</span><br>
-                        <span class="filled_details" id="dropoff_date">'.$Return_date.'</span><br>
-                        <span class="filled_details" id="dropoff_time">'.$Return_time.'</span><br>
+                        <span class="filled_details" id="Drop_location">'.$Drop_location.'</span><br>
+                        <span class="filled_details" id="dropoff_date">'.$Drop_date.'</span><br>
+                        <span class="filled_details" id="dropoff_time">'.$Drop_time.'</span><br>
                     </div>
                 </div>
                 <div class="buttons">

@@ -4,6 +4,7 @@
     margin-right: auto;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    margin-top: 5%;
 }
 
 .request{
@@ -80,6 +81,7 @@ div.request_details div.buttons button{
     color: aliceblue;
     width: 100%;
     display: flex;
+    border-radius: 10px;
 }
 
 .filled_details{

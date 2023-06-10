@@ -27,7 +27,6 @@
       <i class="fa-solid fa-user acount_icon"></i>
     </nav>
 
-    <!-- First part of the home page  -->
     <div class="container1">
       <h1>Drive Way Car Rentals</h1>
       <p>Rent a car anywhere <br> Sri Lanka...</p>
