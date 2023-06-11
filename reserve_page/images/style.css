@@ -1,0 +1,552 @@
+
+.bookNbutton1{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  top: 230px;
+  right: -940px; 
+  
+}
+.bookNbutton2{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  top: 535px;
+  right: -940px; 
+}
+
+.bookNbutton3{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  top: 830px;
+  right: -940px;
+}
+
+.bookNbutton4{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  top: 1135px;
+  right: -940px;
+}
+
+.bookNbutton5{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  top: 1440px;
+  right: -940px;
+}
+
+.bookNbutton6{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  top: 1745px;
+  right: -940px;
+}
+.bookNbutton7{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  top: 2070px;
+  right: -940px;
+}
+
+.bookNbutton8{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  top: 2445px;
+  right: -940px;
+}
+
+.bookNbutton9{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  top: 2810px;
+  right: -940px;
+}
+.bookNbutton10{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  top: 3185px;
+  right: -940px;
+}
+
+
+.dropdown{
+  position: absolute;
+  top: 158px;
+  right:-210px;
+  padding: 10px 90px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 26px;
+  background-color: rgb(239, 32, 32);
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+
+/*  BMW 7 series  Details */
+
+.linkpage1{
+    position: relative;
+    top:47px;
+    right: -1100px;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+.bmw{
+    position: absolute;
+    right: -700px;
+    top: 90px;
+    display: block;
+    height: 265px;
+    width: 380px;
+
+}
+
+
+.logos1{
+  position: relative;
+  top: -330px;
+  left: 1050px;
+  height: 80px;
+  width: 350px;
+}
+
+.bmws7type{
+  position: relative;
+  top: -1220px;
+  left: 1070px;
+  font-size: 16px;
+  font-weight: bold;
+  
+  
+
+}
+
+
+.topic{
+  position: relative;
+  top: -25px;
+  right: -10px;
+}
+
+.Description{
+  font-size: 20px;
+}
+
+
+.fuel{
+    position: absolute;
+    right: 350px;
+    top: 570px;
+    display: block;
+    height: 150px;
+    width: 570px;
+}
+.FuelTypeCar{
+  position: absolute;
+  right: 390px;
+  top: 510px;
+  font-size: 20px;
+}
+
+
+
+
+/*  MASERATI GR Details */
+
+.linkpage2{
+  position: relative;
+  top:290px;
+  right: -1100px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.masarati{
+
+    position: absolute;
+    right: -700px;
+    top: 370px;
+    display: block;
+    height: 250px;
+    width: 370px;
+}
+
+.logos2{
+  position: relative;
+  top: -110px; 
+  left: 1050px;
+  height: 80px;
+  width: 350px;
+}
+
+.masaratitype{
+  position: relative;
+  top: -950px;
+  left: 1070px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+/*  Rangerover Details */
+
+.linkpage3{
+  position: relative;
+  top:540px;
+  right: -1100px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.reng{
+    position: absolute;
+    right: -800px;
+    top: 700px;
+    display: block;
+    height: 250px;
+    width: 800px;
+}
+
+.logos3{
+  position: relative;
+  top: 100px;
+  left: 1050px;
+  height: 80px;
+  width: 350px;
+}
+
+.rangerovertype{
+  position: relative;
+  top: -690px;
+  left: 1070px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+/*  Audi  A5 car Details */
+
+.linkpage4{
+  position: relative;
+  top:800px;
+  right: -1100px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.audi{
+  position: absolute;
+  right: -780px;
+  top: 980px;
+  display: block;
+  height: 250px;
+  width: 590px;
+}
+
+.logos4{
+  position: relative;
+  top: 320px;
+  left: 1050px;
+  height: 80px;
+  width: 350px;
+}
+.audia5type{
+  position: relative;
+  top: -420px;
+  left: 1070px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+/*  Volvo S90car Details*/
+
+.linkpage5{
+  position: relative;
+  top:1050px;
+  right: -1105px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.chevy{
+   position: absolute;
+    right: -750px;
+    top: 1260px;
+    display: block;
+    height: 330px;
+    width: 450px;
+}
+
+/*Volvo S90 webpage  */
+
+.chevypre{
+  position: absolute;
+  height: 700px;
+  width: 920px;
+  top: -45px;
+  left: 900px;
+}
+
+.logos5{
+  position: relative;
+  top: 540px;
+  left: 1050px;
+  height: 80px;
+  width: 350px;
+}
+
+.premiumtype{
+  position: relative;
+  top: -150px;
+  left: 1070px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*  Lexus RC Details */
+
+.linkpage6{
+  position: relative;
+  top:1320px;
+  right: -1120px;
+  color: black;
+  text-transform: uppercase;
+
+
+}
+
+.lexes{
+    position: absolute;
+    right: -740px;
+    top: 1570px;
+    display: block;
+    height: 290px;
+    width: 430px;
+
+}
+
+
+.logos6{
+  position: relative;
+  top: 760px;
+  left: 1050px;
+  height: 80px;
+  width: 350px;
+}
+
+.lexusRctype{
+  position: relative;
+  top: 120px;
+  left: 1070px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*  Audi Q7 Details */
+
+.linkpage7{
+  position: relative;
+  top:1590px;
+  right: -1130px;
+  color: black;
+  text-transform: uppercase;
+
+}
+.audiq7{
+  position: absolute;
+  right: -735px;
+  top: 1920px;
+  display: block;
+  height: 290px;
+  width: 420px;
+}
+
+.logos7{
+  position: relative;
+  top: 1000px;
+  left: 1050px;
+  height: 80px;
+  width: 350px;
+}
+
+.audiq7type{
+  position: relative;
+  top: 410px;
+  left: 1070px;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+/*  Volvo XC90 Details */
+
+.linkpage8{
+  position: relative;
+  top:1920px;
+  right: -1140px;
+  color: black;
+  text-transform: uppercase;
+
+}
+.volvo{
+  position: absolute;
+  right: -730px;
+  top: 2270px;
+  display: block;
+  height: 290px;
+  width: 430px;
+}
+
+.logos8{
+  position: relative;
+  top: 1290px;
+  left: 1050px;
+  height: 80px;
+  width: 350px;
+}
+.volvoxc90type{
+  position: relative;
+  top: 750px;
+  left: 1070px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*  Jaguar I  PACE Details */
+
+.linkpage9{
+  position: relative;
+  top:2225px;
+  right: -1140px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.renault{
+  position: absolute;
+  right: -730px;
+  top: 2630px;
+  display: block;
+  height: 290px;
+  width: 430px;
+}
+
+
+
+
+.logos9{
+  position: relative;
+  top: 1570px;
+  left: 1050px;
+  height: 80px;
+  width: 350px;
+}
+
+.renaulttype{
+  position: relative;
+  top: 1080px;
+  left: 1070px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*  BMW 4 Series Details */
+
+.linkpage10{
+  position: relative;
+  top:2555px;
+  right: -1140px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.bmw4{
+  position: absolute;
+  right: -730px;
+  top: 2970px;
+  display: block;
+  height: 350px;
+  width: 480px;
+}
+
+
+.logos10{
+  position: relative;
+  top: 1860px;
+  left: 1050px;
+  height: 80px;
+  width: 350px;
+}
+
+
+.bmws4type{
+  position: relative;
+  top: 1420px;
+  left: 1070px;
+  font-size: 16px;
+  font-weight: bold;
+}

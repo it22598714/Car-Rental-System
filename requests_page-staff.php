@@ -1,7 +1,7 @@
 <?php require 'config.php'; ?>
 
 <?php
-    $sql = "SELECT r.*, c.First_name, c.Last_name, c.Address, c.NIC, k.Brand, k.model
+    $sql = "SELECT r.*, c.First_name, c.Last_name, c.NIC, k.Brand, k.model
     FROM reservation r, customer c, car k
     WHERE r.Customer_ID = c.ID AND r.Car_ID = k.Car_ID AND r.Status='pending';";
 
@@ -59,7 +59,6 @@
         $Rental_price = $reservation['Rental_price'];
         $First_name = $reservation['First_name'];
         $Last_name = $reservation['Last_name'];
-        $Address = $reservation['Address'];
         $NIC = $reservation['NIC'];
         $Car_ID = $reservation['Car_ID'];
         $Brand = $reservation['Brand'];
@@ -76,12 +75,10 @@
                 <div class="cus_details">
                     <div class="cus_details_topics">
                         <span>Name : </span><br>
-                        <span>Address : </span> <br>
                         <span>NIC : </span> <br>
                     </div>
                     <div class="cus_details_filled_details">
                         <span style="width=50%;" class="filled_details" id="cus_name">'.$First_name.' '.$Last_name.'</span><br>
-                        <span class="filled_details" id="cus_address">'.$Address.'</span><br>
                         <span class="filled_details" id="cus_nic">'.$NIC.'</span><br>
                     </div>
                 </div>

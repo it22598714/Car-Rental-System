@@ -20,7 +20,7 @@
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
         <li><a class="active" href="index.php">Home</a></li>
-        <li><a href="Reservations">Reservations</a></li>
+        <li><a href="Reservations">Reserve</a></li>
         <li><a href="About">About Us</a></li>
         <li><a href="Contact">Contact Us</a></li>
       </ul>
@@ -72,7 +72,7 @@
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
   <script>
   <?php
               // Include the config.php file for database connection
