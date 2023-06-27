@@ -82,7 +82,11 @@
           <li><a href="About">About Us</a></li>
           <li><a href="Contact">Contact Us</a></li>
         </ul>
+<<<<<<< HEAD
         <i class="fa-solid fa-user acount_icon"></i>
+=======
+        <button id="login_btn">Login</button>
+>>>>>>> 87bacef960e0e08fc21940dc148deb63bebc7eb2
       </nav>
 
 
@@ -117,7 +121,11 @@
                   <select name="quick_car_select" id="quick_car_select">
                       <option value="0">Select Car</option>
                   </select>
+<<<<<<< HEAD
                   <button type="submit" class="reserve_btn" name="search_button">Reserve Now</button>
+=======
+                  <button type="submit" name="search_button">Reserve Now</button>
+>>>>>>> 87bacef960e0e08fc21940dc148deb63bebc7eb2
               </div>
           </form>
       </fieldset>
@@ -158,10 +166,17 @@
 
 
   
+<<<<<<< HEAD
 <button type="button" class="bookNbutton1 reserve_btn">Book Now</button>
 <button type="button" class="bookNbutton2 reserve_btn">Book Now</button>
 <button type="button" class="bookNbutton3 reserve_btn">Book Now</button>
 <button type="button" class="bookNbutton4 reserve_btn">Book Now</button>
+=======
+<button type="button" class="bookNbutton1">Book Now</button>
+<button type="button" class="bookNbutton2">Book Now</button>
+<button type="button" class="bookNbutton3">Book Now</button>
+<button type="button" class="bookNbutton4">Book Now</button>
+>>>>>>> 87bacef960e0e08fc21940dc148deb63bebc7eb2
 <button type="button" class="bookNbutton5">Book Now</button>
 <button type="button" class="bookNbutton6">Book Now</button>
 <button type="button" class="bookNbutton7">Book Now</button>
