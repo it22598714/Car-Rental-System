@@ -1,7 +1,7 @@
 <?php require 'config.php'; ?>
 
 <?php
-    $sql = "SELECT r.*, c.First_name, c.Last_name, c.Address, c.NIC, k.Brand, k.model
+    $sql = "SELECT r.*, c.First_name, c.Last_name, c.NIC, k.Brand, k.model, k.Availability
     FROM reservation r, customer c, car k
     WHERE r.Customer_ID = c.ID AND r.Car_ID = k.Car_ID AND r.Status='pending';";
 
@@ -36,7 +36,7 @@
       <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
-        <li><a href="home-staff.php">Home</a></li>
+        <li><a href="home_staff.php">Home</a></li>
         <li><a href="requests_page-staff.php" class="active" href="Reservations">Requests</a></li>
         <li><a>Messages</a></li>
       </ul>
@@ -59,7 +59,6 @@
         $Rental_price = $reservation['Rental_price'];
         $First_name = $reservation['First_name'];
         $Last_name = $reservation['Last_name'];
-        $Address = $reservation['Address'];
         $NIC = $reservation['NIC'];
         $Car_ID = $reservation['Car_ID'];
         $Brand = $reservation['Brand'];
@@ -76,12 +75,10 @@
                 <div class="cus_details">
                     <div class="cus_details_topics">
                         <span>Name : </span><br>
-                        <span>Address : </span> <br>
                         <span>NIC : </span> <br>
                     </div>
                     <div class="cus_details_filled_details">
                         <span style="width=50%;" class="filled_details" id="cus_name">'.$First_name.' '.$Last_name.'</span><br>
-                        <span class="filled_details" id="cus_address">'.$Address.'</span><br>
                         <span class="filled_details" id="cus_nic">'.$NIC.'</span><br>
                     </div>
                 </div>
@@ -111,6 +108,7 @@
                     </form>
                     <form action="delete_reservation.php" method="POST">
                         <input type="hidden" name="reservation_id" value="'.$ID.'">
+                        <input type="hidden" name="car_id_of_reservation" value="'.$Car_ID.'">
                         <button type="submit" name="reject_btn">Reject</button>
                     </form>
                 </div>

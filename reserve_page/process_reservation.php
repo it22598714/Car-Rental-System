@@ -39,10 +39,7 @@ if (isset($_POST['search_button'])) {
 
     if ($insertReservationResult && $updateCarAvailabilityResult) {
       // Reservation and car availability updated successfully
-      echo '<div style="width:60%; margin-left:auto; margin-right:auto; margin-top:10%; padding:5%; background-color:#dbdbdb; border-radius:30px;">
-            <h1>Reservation added successfully</h1><br>
-            <button id="make_payment_button" style="background-color: #ffffff; color: #000000; border-radius: 5px; border: 3px solid #000000; font-size: 1.5vw; margin-left: auto; margin-right: auto; cursor: pointer; width: 14vw;"> Make Payment </button>
-            </div>';
+      echo 'Reservation added successfully.';
     } else {
       // Failed to insert reservation or update car availability
       echo 'Failed to add reservation.';
@@ -56,5 +53,3 @@ if (isset($_POST['search_button'])) {
   echo 'Invalid request.';
 }
 ?>
-
-<script src="JS/process_reservation.js"></script>  

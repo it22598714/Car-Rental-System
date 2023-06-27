@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Drive Way Car Rentals</title>
+    <script src="https://kit.fontawesome.com/cd17775da3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles\style.css">
     <link rel="icon" href="Assets\Images\Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="Styles/navbar.css">
@@ -20,11 +21,11 @@
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
         <li><a class="active" href="index.php">Home</a></li>
-        <li><a href="reserve_page\main.php">Reserve</a></li>
+        <li><a href="reserve_page/main.php">Reserve</a></li>
         <li><a href="About">About Us</a></li>
-        <li><a href="contact.php">Contact Us</a></li>
+        <li><a href="Contact">Contact Us</a></li>
       </ul>
-      <button id="login_btn" onclick="location.href='log.php';" >Login</button>
+      <i onclick="location.href='Customer_profile.php';" class="fa-solid fa-user acount_icon"></i>
     </nav>
 
     <!-- First part of the home page  -->
@@ -38,13 +39,9 @@
 
   <!-- Second part of the home page -->
   <div class="background2">
-    <div class="headingSentence">
-    <h2>Reserve a car in 1 minute..</h2>
-    </div>
-    <form class="set_details_form" action="process_reservation.php" method="post">
       <fieldset class="set_details">
-          <legend><b>. Quick car Resevation .</b></legend>
-            <div class="form_contents">
+          <legend>Quick car Resevation</legend>
+          <form class="set_details_form" action="process_reservation.php" method="post">
               <div class="pickup_details">
                   <label for="set_pick_up_location">Pick-up Location</label>
                   <input type="text" id="set_pick_up_location" name="set_pick_up_location" value=""><br>
@@ -71,9 +68,8 @@
                   </select>
                   <button type="submit" name="search_button">Reserve Now</button>
               </div>
-            </div>
+          </form>
       </fieldset>
-    </form>
   </div>
 
 
@@ -150,10 +146,6 @@
           <button class="prev-btn">&#8249;</button>
           <button class="next-btn">&#8250;</button>
         </div>
-        <div class="navigation">
-          <button class="prev-btn">&#8249;</button>
-          <button class="next-btn">&#8250;</button>
-        </div>
         <div class="viewall_button">
           <button>view all</button>
         </div>
@@ -166,11 +158,11 @@
     <div class="bg5contents">
       <h1>More than 5000 people are using our services</h1>
       <p>Contact us via our web site & experience our amazing customer service...</p>
-      <button onclick="location.href='contact.php'">. Contact us now .</button>
+      <button>. Contact us now .</button>
     </div>
   </div>
 
-  <!-- sixthh part of the home page -->
+  <!-- Fifth part of the home page -->
   <div class="background6">
     <div class="bg6_contents">
       <div class="bg6_header">
@@ -193,7 +185,7 @@
     </div>
   </div>
 
-  <!-- seventh part of the home page -->
+  <!-- Sixth part of the home page -->
   <div class="background7">
     <div class="bg7_contents">
       <div class="bg7_header">
@@ -202,7 +194,7 @@
       <div class="bg7_clients">
         <div class="client" class="client1">
           <img src="images/client1.png" alt="client1">
-          <p class="description"></p>
+          <p class="description">ssssssssssssssssssssssssssssss</p>
         </div>
         <div class="client" class="client2">
           <img src="images/client2.png" alt="client2">
@@ -217,7 +209,7 @@
           <p class="description"></p>
         </div>
       </div>
-      <button  onclick="location.href='feedback.php';">View all Feedbacks</button>
+      <button>View all Feedbacks</button>
     </div>
   </div>
 
@@ -232,18 +224,23 @@
       <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
     </div>
   </div>
+
   <div class="subtopics">
+
   <div class="contact-details">
     <h4>Contact Us</h4>
     <p>123 Main Street, Kaduwela</p>
     <p>Phone: 0112233676</p>
     <p>Email: drivewaycarrentals.com</p>
   </div>
+
+
   <div class="newsletter">
     <h4>Newsletter</h4>
     <p>Subscribe to our newsletter for updates.</p>
     <a href="contact.html">Contact Us</a>
   </div>
+
   <div class="customer-links">
     <h4>Customer Links</h4>
     <ul>
@@ -252,12 +249,13 @@
       <li><a href="#">Terms &amp; Conditions</a></li>
     </ul>
   </div>
+
   </div>
+
   <hr>
   <p>&copy; 2023 Company Name. All rights reserved.</p>
 </footer>
 
-<script src="JS\app.js"></script>
 
 </body>
 </html>

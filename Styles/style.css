@@ -73,16 +73,22 @@
     background-color: rgb(226, 200, 167);
 }
 
+.headingSentence{
+  text-align: center;
+  margin-bottom: 1%;
+}
+
 .set_details{
     padding: 1%;
     margin-left: 8.33%;
     margin-right: 8.33%;
     padding: 2%;
-    background-color: #ffffff;
+    background-color: rgb(235, 236, 231);
     border-radius: 15px;
+    border-width: 3px;
 }
 
-.set_details_form{
+.form_contents{
     display: flex;
 }
 
@@ -377,7 +383,7 @@
 
 
 
-  /* background5 */
+  /* background6 */
 
   .background6{
     background-color: rgb(43, 49, 51);
@@ -394,13 +400,23 @@
     width: 83.34%;
     padding-top: 10%;
     padding-bottom: 10%;
+    color: aliceblue;
+  }
+
+  .bg6_contents h1{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    font-size: 3vw;
+    padding-bottom: 5%;
   }
 
 
-  /* background5 */
+  /* background7 */
   
   .background7{
-    background-color: rgb(77, 87, 91);
+    background-color: rgb(63, 67, 69);
   }
 
   .bg7_header{
@@ -418,7 +434,7 @@
   .bg7_clients{
     display: flex;
     gap: 30px;
-    padding: 0 10px; 
+    padding: 0 10px;
   }
 
   .bg7_clients img{
@@ -438,6 +454,7 @@
 
   .bg7_contents{
     padding-bottom: 5%;
+    color: #dbdbdb; 
   }
 
   .bg7_contents button{
@@ -454,3 +471,66 @@
     border: 2px solid black;
     transition: 0.5s;
 }
+
+
+
+  /* footer */
+
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .top-section img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .top-section h3 {
+    margin-left: 10px;
+  }
+  
+  .social-media-icons a {
+    margin-right: 5px;
+  }
+  
+  .social-media-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .subtopics{
+    display: flex;
+    gap: 20%;
+  }
+  
+  .contact-details h4 {
+    margin-bottom: 10px;
+  }
+  
+  .newsletter h4, .customer-links h4 {
+    margin-bottom: 10px;
+  }
+  
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #333;
+  }
+  

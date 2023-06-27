@@ -21,7 +21,7 @@
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
         <li><a class="active" href="index.php">Home</a></li>
-        <li><a href="requests_page-staff.php">Requests</a></li>
+        <li><a href="requests_page_staff.php">Requests</a></li>
         <li><a href="messages">Messages</a></li>
       </ul>
       <i class="fa-solid fa-user acount_icon"></i>

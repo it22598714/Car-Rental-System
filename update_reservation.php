@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['accept_btn'])) {
     mysqli_query($con, $updateQuery);
 
     // Redirect to the requests page
-    header('Location: requests_page-staff.php');
+    header('Location: requests_page_staff.php');
     exit();
 }
 ?>

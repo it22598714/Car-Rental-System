@@ -1,0 +1,79 @@
+ #reupdate{     
+                background-color: white;
+                width: 400px;
+                height: 500px;
+                margin-left: 30%;
+                padding: 20px 20px 20px 20px;
+
+                
+                transform:
+                    perspective(75em)
+                    rotateX(18deg);
+                box-shadow:
+                    rgba(44, 62, 39, 0.84) 0px 120px 223px -25px,
+                    rgba(38, 52, 64, 0.16) 0px 35px 75px -35px;
+                border-radius: 10px;
+                border: solid;
+                border-color:
+                    rgb(213, 220, 226)
+                    rgb(213, 220, 226)
+                    rgb(184, 194, 204);
+            }
+                .form-control{
+                    width: 220px;
+                    height: 30px;
+                    box-shadow: 6px;
+
+                
+}
+
+#updatebtn{
+    position: absolute;
+    
+    background-color:#0707ab;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:10px 10px 10px 10px;
+    min-height:30px; 
+    min-width: 120px;
+    font-size: 20px;
+    
+  transition: 0.3s;
+}
+#updatebtn:hover{
+    box-shadow: 12px;
+}
+h5{
+    font-size: 50px;
+    margin-left: 32%;
+}
+.modal-header{
+    background-color: darkgray;
+    width: 100%;
+}
+#id{
+    width: 200px;
+    height: 45px;
+    margin-left: 20%;
+}
+#Name{
+    width: 200px;
+    height: 45px;
+    margin-left: 7%;
+}
+#Email{
+    width: 200px;
+    height: 45px;
+    margin-left: 8%;
+}
+#Subject{
+    width: 200px;
+    height: 45px;
+    margin-left: 2%;
+}
+body{
+    background-image: url("../Assets/Images/ll.jpg");
+    background-size: cover;
+
+}
