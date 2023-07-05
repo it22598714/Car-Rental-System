@@ -20,9 +20,10 @@
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
         <li><a class="active" href="index.php">Home</a></li>
-        <li><a href="reserve_page\main.php">Reserve</a></li>
-        <li><a href="About">About Us</a></li>
-        <li><a href="contact.php">Contact Us</a></li>
+        <li><a href="reserve_page\main.php">Cars</a></li>
+        <li><a href="feedback.php">Feedback</a></li>
+        <li><a href="contact.php">Contact Us</a></li> 
+        
       </ul>
       <button id="login_btn" onclick="location.href='log.php';" >Login</button>
     </nav>
@@ -52,8 +53,6 @@
                   <input type="date" id="set_pickup_date" name="set_pickup_date">
                   <label for="set_pickup_time">Pick-up Time</label>
                   <input type="time" id="set_pickup_time" name="set_pickup_time"><br>
-                  <label for="cus_fname">First name</label>
-                  <input type="text" id="cus_fname" name="cus_fname" value="">
               </div>
               <div class="drop_details">
                   <label for="set_drop_location">Drop-off Location</label>
@@ -62,14 +61,12 @@
                   <input type="date" id="set_drop_date" name="set_drop_date">
                   <label for="set_drop_time">Drop Time</label>
                   <input type="time" id="set_drop_time" name="set_drop_time"><br>
-                  <label for="cus_lname">Last name</label>
-                  <input type="text" id="cus_lname" name="cus_lname" value="">
               </div>
               <div class="search_button">
                   <select name="quick_car_select" id="quick_car_select">
                       <option value="0">Select Car</option>
                   </select>
-                  <button type="submit" name="search_button">Reserve Now</button>
+                  <button onclick="location.href='contact.php'">Reserve Now</button>
               </div>
             </div>
       </fieldset>
@@ -125,37 +122,21 @@
     <div class="container_bg4">
       <div class="car_categories">
         <div class="scroll_list">
-          <div class="category">
-            <img src="Assets\Images\sedan.jpg" alt="">
-            <h2>Sedan</h2>
+          <div onclick="location='reserve_page/compact.php'" class="category">
+            <img src="Assets\Images\hatchback.png" alt="">
+            <h2>Compact</h2>
           </div>
-          <div class="category">
+          <div onclick="location='reserve_page/SUV.php'" class="category">
             <img src="Assets\Images\suv.png" alt="">
             <h2>SUV</h2>
           </div>
-          <div class="category">
-            <img src="Assets\Images\hatchback.png" alt="">
-            <h2>Hatchback</h2>  
+          <div onclick="location='reserve_page/luxery.php'" class="category">
+            <img src="Assets/Images/sedan.jpg" alt="">
+            <h2>Luxury</h2>  
           </div>
-          <div class="category">
-            <img src="Assets\Images\convertiable.png" alt="">
-            <h2>Convertible</h2>
-          </div>
-          <div class="category">
-            <img src="Assets\Images\minivan.png" alt="">
-            <h2>Minivan</h2>
-          </div>
-        </div>
-        <div style="display:none;" class="navigation">
-          <button class="prev-btn">&#8249;</button>
-          <button class="next-btn">&#8250;</button>
-        </div>
-        <div class="navigation">
-          <button class="prev-btn">&#8249;</button>
-          <button class="next-btn">&#8250;</button>
         </div>
         <div class="viewall_button">
-          <button>view all</button>
+          <button onclick="location='reserve_page/main.php'">view all</button>
         </div>
       </div>
     </div>
@@ -181,7 +162,7 @@
           Set Date & Location
         </div>
         <div class="step2">
-          Choose a cal_from
+          Choose a car_
         </div>
         <div class="step3">
           Make a reservation
@@ -193,44 +174,11 @@
     </div>
   </div>
 
-  <!-- seventh part of the home page -->
-  <div class="background7">
-    <div class="bg7_contents">
-      <div class="bg7_header">
-        <h1>Our Clients</h1>
-      </div>
-      <div class="bg7_clients">
-        <div class="client" class="client1">
-          <img src="images/client1.png" alt="client1">
-          <p class="description"></p>
-        </div>
-        <div class="client" class="client2">
-          <img src="images/client2.png" alt="client2">
-          <p class="description"></p>
-        </div>
-        <div class="client" class="client3">
-          <img src="images/client3.png" alt="client3">
-          <p class="description"></p>
-        </div>
-        <div class="client" class="client4">
-          <img src="images/client4.png" alt="client4">
-          <p class="description"></p>
-        </div>
-      </div>
-      <button  onclick="location.href='feedback.php';">View all Feedbacks</button>
-    </div>
-  </div>
-
 
   <footer>
   <div class="top-section">
     <img src="Assets/Images/Logo.png" alt="Company Logo">
     <h3>Drive Way Car Rentals</h3>
-    <div class="social-media-icons">
-      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-      <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-    </div>
   </div>
   <div class="subtopics">
   <div class="contact-details">

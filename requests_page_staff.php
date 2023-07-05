@@ -29,7 +29,7 @@
     <!-- Navigation bar  -->
     <nav>
       <div class="logo">
-        <a href="index.php">
+        <a href="home_staff.php">
           <img src="Assets/Images/Logo.png" alt="Logo" width="100px" height="100px">
         </a>
       </div>
@@ -38,9 +38,8 @@
       <ul class="menu">
         <li><a href="home_staff.php">Home</a></li>
         <li><a href="requests_page-staff.php" class="active" href="Reservations">Requests</a></li>
-        <li><a>Messages</a></li>
+        <li><a href="messages_staff.php">Messages</a></li>
       </ul>
-      <i class="fa-solid fa-user acount_icon"></i>
     </nav>
 
     <div class="all_requests">
@@ -115,14 +114,14 @@
             </div>
     </div>';
 
-    echo '<div class="request" id="req1">    
+    /*echo '<div class="request" id="req1">    
         <!-- ... -->
         <div class="buttons">
             
         </div>
-    </div>';
+    </div>'; */
 
-    } 
+    }
     ?>
 
     </div>

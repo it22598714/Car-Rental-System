@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reject_btn'])) {
+if (isset($_POST['reject_btn'])) {
     $reservationID = $_POST['reservation_id'];
     $carId = $_POST['car_id_of_reservation'];
 

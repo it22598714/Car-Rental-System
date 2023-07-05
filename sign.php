@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>    
       <head>
-        <link rel = "stylesheet" href = "Styles\project.css">
-        <script src = "G:\project\JS\script.js"></script>
+        <link rel = "stylesheet" href = "styles\project.css">
+        <script src = "JS\script.js"></script>
     </head>
 
 <body>
@@ -29,7 +29,7 @@
               <div class="container4">
                 <input  type="submit" id="bttn1" class="bttn-sign" value="Sign Up"><br><br>
 
-                <span> Have an account? <a id="sign" href="login.html">Log In</a></span>
+                <span> Have an account? <a id="sign" href="log.php">Log In</a></span>
 
               </div>
             </form>

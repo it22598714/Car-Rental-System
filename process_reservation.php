@@ -1,5 +1,6 @@
 <?php
 require_once 'config.php';
+session_start();
 
 // Check if the form is submitted
 if (isset($_POST['search_button'])) {
@@ -7,19 +8,15 @@ if (isset($_POST['search_button'])) {
   $pickupLocation = $_POST['set_pick_up_location'];
   $pickupDate = $_POST['set_pickup_date'];
   $pickupTime = $_POST['set_pickup_time'];
-  $firstName = $_POST['cus_fname'];
   $dropLocation = $_POST['set_drop_location'];
   $dropDate = $_POST['set_drop_date'];
   $dropTime = $_POST['set_drop_time'];
-  $lastName = $_POST['cus_lname'];
   $selectedCarID = $_POST['quick_car_select'];
 
-  // Find customer ID based on first name and last name
-  $findCustomerIDQuery = "SELECT ID FROM Customer WHERE First_name = '$firstName' AND Last_name = '$lastName'";
-  $findCustomerIDResult = $con->query($findCustomerIDQuery);
-  if ($findCustomerIDResult && $findCustomerIDResult->num_rows > 0) {
-    $customerIDRow = $findCustomerIDResult->fetch_assoc();
-    $customerID = $customerIDRow['ID'];
+  //Get customer ID from the session
+  $customerID = $_SESSION['CID'];
+
+  if (isset($customerID)) {
 
     // Generate reservation ID by adding 1 to the last 7 digits of the last reservation ID
     $getLastReservationIDQuery = "SELECT ID FROM Reservation ORDER BY ID DESC LIMIT 1";

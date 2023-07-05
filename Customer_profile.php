@@ -7,14 +7,17 @@
     <body>
         <?php 
             require "config.php"; // Including the configuration file
+            session_start();
+
+            $cusID = $_SESSION['CID'];
 
             // Fetching customer data from the database
-            $sql0 = "SELECT * FROM customer WHERE ID = 'CCU3715456'";
+            $sql0 = "SELECT * FROM customer WHERE ID = '$cusID'";
             $result11 = $con->query($sql0);
             $result22 = $result11 -> fetch_assoc();
 
             // Fetching customer phone data from the database
-            $sql11 = "SELECT * FROM customer_phone WHERE ID = 'CCU3715456'";
+            $sql11 = "SELECT * FROM customer_phone WHERE ID = '$cusID'";
             $result33 = $con->query($sql11);
             $result44 = $result33 -> fetch_assoc();
            
@@ -45,7 +48,7 @@
             <!-- Account details section -->
             <div class="division22">
                 <h1 class="header11" >Account details</h1>
-                <form  method="post" action="Update1.php">
+                <form  method="post" action="Update_delete_Customer_profile.php">
                     <div class="shower_name11">
                         <div class="shower_div11">
 
@@ -102,7 +105,7 @@
                 <div class="division33-subdiv11">
                     <?php
 
-                    $sql22 = "SELECT * FROM reservation where Customer_ID='CCU5463728' ;";
+                    $sql22 = "SELECT * FROM reservation where Customer_ID='$cusID' ;";
 
                     $result55 = $con-> query($sql22);
             

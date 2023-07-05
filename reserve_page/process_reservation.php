@@ -1,5 +1,6 @@
 <?php
 require_once 'config.php';
+session_start();
 
 // Check if the form is submitted
 if (isset($_POST['search_button'])) {
@@ -7,19 +8,15 @@ if (isset($_POST['search_button'])) {
   $pickupLocation = $_POST['set_pick_up_location'];
   $pickupDate = $_POST['set_pickup_date'];
   $pickupTime = $_POST['set_pickup_time'];
-  $firstName = $_POST['cus_fname'];
   $dropLocation = $_POST['set_drop_location'];
   $dropDate = $_POST['set_drop_date'];
   $dropTime = $_POST['set_drop_time'];
-  $lastName = $_POST['cus_lname'];
   $selectedCarID = $_POST['quick_car_select'];
 
-  // Find customer ID based on first name and last name
-  $findCustomerIDQuery = "SELECT ID FROM Customer WHERE First_name = '$firstName' AND Last_name = '$lastName'";
-  $findCustomerIDResult = $con->query($findCustomerIDQuery);
-  if ($findCustomerIDResult && $findCustomerIDResult->num_rows > 0) {
-    $customerIDRow = $findCustomerIDResult->fetch_assoc();
-    $customerID = $customerIDRow['ID'];
+  //Get customer ID from the session
+  $customerID = $_SESSION['CID'];
+
+  if (isset($customerID)) {
 
     // Generate reservation ID by adding 1 to the last 7 digits of the last reservation ID
     $getLastReservationIDQuery = "SELECT ID FROM Reservation ORDER BY ID DESC LIMIT 1";
@@ -39,7 +36,10 @@ if (isset($_POST['search_button'])) {
 
     if ($insertReservationResult && $updateCarAvailabilityResult) {
       // Reservation and car availability updated successfully
-      echo 'Reservation added successfully.';
+      echo '<div style="width:60%; margin-left:auto; margin-right:auto; margin-top:10%; padding:5%; background-color:#dbdbdb; border-radius:30px;">
+            <h1>Reservation added successfully</h1><br>
+            <button id="make_payment_button" style="background-color: #ffffff; color: #000000; border-radius: 5px; border: 3px solid #000000; font-size: 1.5vw; margin-left: auto; margin-right: auto; cursor: pointer; width: 14vw;"> Make Payment </button>
+            </div>';
     } else {
       // Failed to insert reservation or update car availability
       echo 'Failed to add reservation.';
@@ -53,3 +53,5 @@ if (isset($_POST['search_button'])) {
   echo 'Invalid request.';
 }
 ?>
+
+<script src="JS/process_reservation.js"></script>  

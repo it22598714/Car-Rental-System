@@ -18,8 +18,8 @@ if(isset ($_POST['Button1'])){
 
     WHERE ID='$new_ID11'";
 
-    if($conn->query($sql3)){
-        header("Location:webhtmlfile.php?updated");
+    if($con->query($sql3)){
+        header("Location:Customer_profile.php?updated");
         echo "Update successfully";
     }else{
         echo "Failed!try again";
@@ -34,8 +34,8 @@ if(isset($_POST['deleteaccount2'])){
 
     $sql_d = "DELETE FROM customer WHERE ID = '$ID11'";
 
-    if($conn->query($sql_d)){
-        header("Location: login.php");
+    if($con->query($sql_d)){
+        header("Location: log.php");
     }else{
         echo "Failed! try ! again";
     }

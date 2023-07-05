@@ -24,7 +24,6 @@
     }
 
     .rest_body{
-      position: relative;
       width: 300px;
       height: 300px;
       position: relative;
@@ -34,7 +33,7 @@
       animation: change 30s infinite ease-in-out;
     }
     
-    @keyframes change {
+    /*@keyframes change {
       0% {
         background-image: url('11.jpg');
       }
@@ -53,7 +52,7 @@
       
      
         
-      }
+      }*/
       .articles{
         position: absolute  ;
         width: 500px;
@@ -78,17 +77,14 @@
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <ul class="menu">
           <li><a href="index.php">Home</a></li>
-          <li><a class="active" href="Reservations">Reserve</a></li>
+          <li><a class="active" href="Reservations">Cars</a></li>
           <li><a href="About">About Us</a></li>
           <li><a href="Contact">Contact Us</a></li>
         </ul>
-<<<<<<< HEAD
         <i class="fa-solid fa-user acount_icon"></i>
-=======
-        <button id="login_btn">Login</button>
->>>>>>> 87bacef960e0e08fc21940dc148deb63bebc7eb2
       </nav>
 
+        <!-- Reservation form  -->
 
     <div class="reserve_section">
 
@@ -104,8 +100,6 @@
                   <input type="date" id="set_pickup_date" name="set_pickup_date">
                   <label for="set_pickup_time">Pick-up Time</label>
                   <input type="time" id="set_pickup_time" name="set_pickup_time"><br>
-                  <label for="cus_fname">First name</label>
-                  <input type="text" id="cus_fname" name="cus_fname" value="">
               </div>
               <div class="drop_details">
                   <label for="set_drop_location">Drop-off Location</label>
@@ -114,18 +108,12 @@
                   <input type="date" id="set_drop_date" name="set_drop_date">
                   <label for="set_drop_time">Drop Time</label>
                   <input type="time" id="set_drop_time" name="set_drop_time"><br>
-                  <label for="cus_lname">Last name</label>
-                  <input type="text" id="cus_lname" name="cus_lname" value="">
               </div>
               <div class="search_button">
                   <select name="quick_car_select" id="quick_car_select">
                       <option value="0">Select Car</option>
                   </select>
-<<<<<<< HEAD
                   <button type="submit" class="reserve_btn" name="search_button">Reserve Now</button>
-=======
-                  <button type="submit" name="search_button">Reserve Now</button>
->>>>>>> 87bacef960e0e08fc21940dc148deb63bebc7eb2
               </div>
           </form>
       </fieldset>
@@ -166,23 +154,16 @@
 
 
   
-<<<<<<< HEAD
-<button type="button" class="bookNbutton1 reserve_btn">Book Now</button>
-<button type="button" class="bookNbutton2 reserve_btn">Book Now</button>
-<button type="button" class="bookNbutton3 reserve_btn">Book Now</button>
-<button type="button" class="bookNbutton4 reserve_btn">Book Now</button>
-=======
-<button type="button" class="bookNbutton1">Book Now</button>
-<button type="button" class="bookNbutton2">Book Now</button>
-<button type="button" class="bookNbutton3">Book Now</button>
-<button type="button" class="bookNbutton4">Book Now</button>
->>>>>>> 87bacef960e0e08fc21940dc148deb63bebc7eb2
-<button type="button" class="bookNbutton5">Book Now</button>
-<button type="button" class="bookNbutton6">Book Now</button>
-<button type="button" class="bookNbutton7">Book Now</button>
-<button type="button" class="bookNbutton8">Book Now</button>
-<button type="button" class="bookNbutton9">Book Now</button>
-<button type="button" class="bookNbutton10">Book Now</button>
+<button type="button" class="bookNbutton1 reserve_btn" onclick="location='../Payment.php'">Book Now</button>
+<button type="button" class="bookNbutton2 reserve_btn" onclick="location='../Payment.php'">Book Now</button>
+<button type="button" class="bookNbutton3 reserve_btn" onclick="location='../Payment.php'">Book Now</button>
+<button type="button" class="bookNbutton4 reserve_btn" onclick="location='../Payment.php'">Book Now</button>
+<button type="button" class="bookNbutton5" onclick="location='../Payment.php'">Book Now</button>
+<button type="button" class="bookNbutton6" onclick="location='../Payment.php'">Book Now</button>
+<button type="button" class="bookNbutton7" onclick="location='../Payment.php'">Book Now</button>
+<button type="button" class="bookNbutton8" onclick="location='../Payment.php'">Book Now</button>
+<button type="button" class="bookNbutton9" onclick="location='../Payment.php'">Book Now</button>
+<button type="button" class="bookNbutton10" onclick="location='../Payment.php'">Book Now</button>
 
 
 

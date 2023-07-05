@@ -170,6 +170,8 @@
     padding-top: 35vh;
     color: #ffffff;
     padding-bottom: 15vh;
+    margin-left: 8.33%;
+    margin-right: 8.33%;
 }
 
 .car_categories {
@@ -181,16 +183,10 @@
 
 .scroll_list {
     display: flex;
-    gap: 30px;
-    padding: 0 10px; 
+    gap: 300px;
+    padding: 0 10px;
 }
 
-.category {
-    flex: 0 0 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .category img {
     width: 200px;
@@ -230,9 +226,6 @@
       gap: 20px;
     }
     
-    .category {
-      flex: 0 0 200px;
-    }
     
     .category img {
       width: 150px;
@@ -495,15 +488,6 @@
   
   .top-section h3 {
     margin-left: 10px;
-  }
-  
-  .social-media-icons a {
-    margin-right: 5px;
-  }
-  
-  .social-media-icons img {
-    width: 20px;
-    height: 20px;
   }
 
   .subtopics{

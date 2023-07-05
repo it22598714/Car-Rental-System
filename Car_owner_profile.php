@@ -7,14 +7,17 @@
     <body>
         <?php 
             require "config.php"; // Includes the config.php file
+            session_start();
+
+            $carOwnerID = $_SESSION['OID'];
 
             // Retrieves data from the "car_owner" table based on ID
-            $sql = "SELECT * FROM car_owner WHERE ID = 'CCO1547635'";
+            $sql = "SELECT * FROM car_owner WHERE ID = '$carOwnerID'";
             $result1 = $con->query($sql);
             $result2 = $result1 -> fetch_assoc();
 
              // Retrieves data from the "car_owner_phone" table based on car_owner_ID
-            $sql1 = "SELECT * FROM car_owner_phone WHERE car_owner_ID = 'CCO1547635'";
+            $sql1 = "SELECT * FROM car_owner_phone WHERE car_owner_ID = '$carOwnerID'";
             $result3 = $con->query($sql1);
             $result4 = $result3 -> fetch_assoc();
            
@@ -95,7 +98,7 @@
                 <div class="division3-subdiv1">
                     <?php
 
-                    $sql2 = "SELECT * FROM reservation r,car c where r.Car_ID=c.Car_ID AND c.Car_owner_ID='CCO1547635' ; ";
+                    $sql2 = "SELECT * FROM reservation r,car c where r.Car_ID=c.Car_ID AND c.Car_owner_ID='$carOwnerID' ; ";
 
                     $result5 = $con-> query($sql2);
             

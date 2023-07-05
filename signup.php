@@ -21,6 +21,7 @@
         if($con->query($sql)){
 
             echo "Registration Successful";
+            header("Location: log.php");
         }
         else{
 

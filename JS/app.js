@@ -25,7 +25,7 @@ make_payment_button.addEventListener('click', function(){
     window.open('Payment.php');
 });
 
-*/
+
 
   var scrollList = document.querySelector(".scroll_list");
   var prevBtn = document.querySelector(".prev-btn");
@@ -47,3 +47,4 @@ make_payment_button.addEventListener('click', function(){
       behavior: "smooth", // Add smooth scrolling animation
     });
   }
+*/
